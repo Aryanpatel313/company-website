@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Patel - Professional Services</title>
+    <title>BuildStructure - Structural Consultancy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Aryan Patel</div>
+            <div class="logo">BuildStructure</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -23,32 +24,63 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <h1>Welcome to My Professional Portfolio</h1>
-            <p>Building innovative solutions and delivering exceptional services</p>
-            <a href="#services" class="btn btn-primary">Get Started</a>
+            <h1>Structural Excellence</h1>
+            <p>Professional Building Consultancy & Structural Design Solutions</p>
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>BuildStructure is a leading structural consultancy firm specializing in innovative building design and structural analysis. With over a decade of experience, we provide comprehensive solutions for residential, commercial, and industrial projects.</p>
+                    <p>Our team of expert engineers and architects work collaboratively to deliver sustainable, safe, and cost-effective structural solutions that exceed industry standards.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <h4>Expert Team</h4>
+                        <p>Certified structural engineers with extensive experience</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Innovation</h4>
+                        <p>Latest technology and design methodologies</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Quality</h4>
+                        <p>Rigorous quality control and compliance standards</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2>Services</h2>
+            <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Web Development</h3>
-                    <p>Professional website development using modern technologies and best practices.</p>
+                    <div class="service-icon">🏗️</div>
+                    <h3>Structural Design</h3>
+                    <p>Comprehensive structural design for residential and commercial buildings with modern engineering practices.</p>
                 </div>
                 <div class="service-card">
-                    <h3>UI/UX Design</h3>
-                    <p>Beautiful and intuitive user interfaces designed for optimal user experience.</p>
+                    <div class="service-icon">📐</div>
+                    <h3>Building Analysis</h3>
+                    <p>Advanced structural analysis and modeling for complex building systems and load calculations.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Consulting</h3>
-                    <p>Expert consulting services to help your business grow and succeed online.</p>
+                    <div class="service-icon">🔧</div>
+                    <h3>Consultation</h3>
+                    <p>Expert consultation on structural integrity, renovation, and reinforcement of existing structures.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Mobile Apps</h3>
-                    <p>Custom mobile application development for iOS and Android platforms.</p>
+                    <div class="service-icon">📋</div>
+                    <h3>Documentation</h3>
+                    <p>Complete technical documentation, drawings, and compliance reports for regulatory approval.</p>
                 </div>
             </div>
         </div>
@@ -60,22 +92,22 @@
             <h2>Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">📱</div>
-                    <h3>E-Commerce Platform</h3>
-                    <p>A fully functional e-commerce website with payment integration and inventory management.</p>
-                    <a href="#" class="btn btn-secondary">View Project</a>
+                    <div class="project-image">🏢</div>
+                    <h3>Commercial Complex</h3>
+                    <p>A 25-storey commercial building with advanced seismic design and sustainable features.</p>
+                    <span class="project-meta">Completed 2023</span>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">💼</div>
-                    <h3>Business Analytics Dashboard</h3>
-                    <p>Real-time analytics dashboard for tracking business metrics and performance.</p>
-                    <a href="#" class="btn btn-secondary">View Project</a>
+                    <div class="project-image">🏠</div>
+                    <h3>Residential Development</h3>
+                    <p>Large-scale residential project with 150+ units featuring innovative structural solutions.</p>
+                    <span class="project-meta">Completed 2023</span>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">🎨</div>
-                    <h3>Social Media App</h3>
-                    <p>Interactive social media platform with real-time messaging and notifications.</p>
-                    <a href="#" class="btn btn-secondary">View Project</a>
+                    <div class="project-image">🏛️</div>
+                    <h3>Heritage Renovation</h3>
+                    <p>Structural restoration and reinforcement of a heritage building maintaining architectural integrity.</p>
+                    <span class="project-meta">Completed 2022</span>
                 </div>
             </div>
         </div>
@@ -85,7 +117,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get In Touch</h2>
-            <p class="contact-intro">Have a project in mind? Let's work together!</p>
+            <p class="contact-intro">Have a project inquiry? Let's discuss your structural consultancy needs.</p>
             <form class="contact-form" id="contactForm">
                 <div class="form-group">
                     <label for="name">Full Name</label>
@@ -100,14 +132,21 @@
                     <input type="tel" id="phone" name="phone">
                 </div>
                 <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
+                    <label for="subject">Project Type</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select Project Type</option>
+                        <option value="Residential">Residential</option>
+                        <option value="Commercial">Commercial</option>
+                        <option value="Industrial">Industrial</option>
+                        <option value="Renovation">Renovation</option>
+                        <option value="Other">Other</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary">Submit Inquiry</button>
             </form>
         </div>
     </section>
@@ -115,11 +154,27 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Aryan Patel. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BuildStructure</h4>
+                    <p>Professional structural consultancy and building design services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@buildstructure.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BuildStructure. All rights reserved.</p>
             </div>
         </div>
     </footer>
